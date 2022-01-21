@@ -13,7 +13,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <a
           class="text-sky-600 decoration-wavy"
           href="https://github.com/lbk2knewlifegithub"
-          >lbk2</a
+          >lbk2k</a
         >.
       </p>
     </footer>
