@@ -35,9 +35,7 @@ export const testimonials: Testimonial[] = [
       'Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love.',
     image: 'assets/images/image-jeanette.jpg',
     option: {
-      parent: '',
-      avatar: '',
-      title: '',
+      verified: "text-blue-900",
       content: 'text-blue-800',
     },
   },
