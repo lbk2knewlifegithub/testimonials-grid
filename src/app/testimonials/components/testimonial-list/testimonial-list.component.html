@@ -1,0 +1,14 @@
+<ng-container
+  *ngFor="
+    let testimonial of testimonials;
+    trackBy: identifyTestimonial;
+    index as i
+  "
+>
+  <lbk-testimonial
+    class="block lg:h-full"
+    [style.gridArea]="position(i)"
+    [testimonial]="testimonial"
+    [displayQuotes]="i === 0"
+  ></lbk-testimonial>
+</ng-container>

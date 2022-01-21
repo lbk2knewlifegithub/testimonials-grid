@@ -1,0 +1,35 @@
+<div class="relative p-8 shadow-lg rounded-lg {{ option?.parent }} h-full lg:p-6 z-10">
+  <div class="flex items-center gap-6">
+    <img
+      class="rounded-full w-10 h-10 border-2 {{ option?.avatar }}"
+      [src]="testimonial.image"
+      [alt]="testimonial.name"
+    />
+
+    <div>
+      <h4 class="text-lg lg:text-xl lg:tracking-wider">
+        {{ testimonial.name }}
+      </h4>
+      <p class="text-gray-900 text-opacity-50 text-sm {{ option?.verified }}">
+        Verified Graduate
+      </p>
+    </div>
+  </div>
+
+  <h3 class="mt-4 text-lg {{ option?.title }} lg:mt-2">{{ testimonial.title }}</h3>
+
+  <p
+    class="mt-4 text-sm text-[13px]  {{
+      option?.content
+    }} text-gray-900  text-opacity-70"
+  >
+    "{{ testimonial.content }}"
+  </p>
+
+  <img
+    [hidden]="!displayQuotes"
+    class="absolute right-28 top-0 z-[-1]"
+    src="assets/images/bg-pattern-quotation.svg"
+    alt="Quotes"
+  />
+</div>

@@ -1,0 +1,31 @@
+:host {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "zero"
+    "one"
+    "two"
+    "three"
+    "four";
+}
+
+@media (min-width: 768px) {
+  :host {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "zero zero"
+      "one four"
+      "two four"
+      "three three";
+  }
+}
+
+@media (min-width: 1024px) {
+  :host {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "zero zero one four"
+      "two three three four";
+  }
+}
