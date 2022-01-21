@@ -5,16 +5,16 @@
 >
   <div class="flex items-center gap-6">
     <img
-      class="rounded-full w-10 h-10 border-2 {{ option?.avatar }}"
+      class="rounded-full w-8 h-8 border-2 {{ option?.avatar }}"
       [src]="testimonial.image"
       [alt]="testimonial.name"
     />
 
     <div>
-      <h4 class="lg:tracking-wider">
+      <h5 class=" text-sm lg:tracking-wider">
         {{ testimonial.name }}
-      </h4>
-      <p class="text-gray-900 text-opacity-50 text-sm {{ option?.verified }}">
+      </h5>
+      <p class="text-gray-900 text-opacity-50 -mt-1 text-sm {{ option?.verified }}">
         Verified Graduate
       </p>
     </div>
@@ -25,7 +25,7 @@
   </h3>
 
   <p
-    class="mt-4 text-sm text-[13px]  {{
+    class="mt-4 text-sm leading-[18px] text-[13px]  {{
       option?.content
     }} text-gray-900  text-opacity-70"
   >
